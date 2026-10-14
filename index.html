@@ -1,182 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skybreaker(우주벽돌깨기) 개인정보처리방침</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skybreaker 개인정보처리방침 · Privacy Policy</title>
 <style>
-  :root {
-    color-scheme: light dark;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 40px 20px 80px;
-    color: #1c1c1e;
-    background: #ffffff;
-  }
-  h1 {
-    font-size: 1.6rem;
-    margin-bottom: 4px;
-  }
-  .meta {
-    color: #6e6e73;
-    font-size: 0.92rem;
-    margin-bottom: 32px;
-  }
-  h2 {
-    font-size: 1.15rem;
-    margin-top: 36px;
-    border-bottom: 1px solid #e5e5e7;
-    padding-bottom: 8px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 12px 0;
-    font-size: 0.95rem;
-  }
-  th, td {
-    text-align: left;
-    padding: 8px 10px;
-    border: 1px solid #e5e5e7;
-    vertical-align: top;
-  }
-  th {
-    background: #f5f5f7;
-    width: 28%;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  a {
-    color: #0066cc;
-  }
-  .contact {
-    background: #f5f5f7;
-    border-radius: 12px;
-    padding: 16px 20px;
-    margin-top: 16px;
-  }
-  footer {
-    margin-top: 48px;
-    color: #86868b;
-    font-size: 0.85rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { background: #000; color: #f5f5f7; }
-    th { background: #1c1c1e; }
-    th, td { border-color: #3a3a3c; }
-    .contact { background: #1c1c1e; }
-    h2 { border-bottom-color: #3a3a3c; }
-  }
+  :root { --bg:#ffffff; --fg:#1d1d1f; --sub:#6e6e73; --line:#e5e5ea; --accent:#662E99; --box:#f5f3fa; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111114; --fg:#f2f2f7; --sub:#a1a1a6; --line:#2c2c2e; --accent:#c9a9f5; --box:#1c1a24; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); color:var(--accent); }
+  p, li { margin:6px 0; }
+  ul, ol { padding-left:22px; }
+  .meta { color:var(--sub); font-size:14px; }
+  .box { background:var(--box); border-radius:12px; padding:12px 16px; margin:12px 0; }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:8px 0; }
+  th, td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:var(--box); }
+  .wrap { overflow-x:auto; }
+  a { color:var(--accent); }
+  hr { border:0; border-top:2px solid var(--line); margin:56px 0 24px; }
 </style>
 </head>
 <body>
+<main>
 
 <h1>Skybreaker(우주벽돌깨기) 개인정보처리방침</h1>
-<p class="meta">시행일자: 2026년 9월 19일</p>
+<p class="meta">시행일: 2026년 10월 14일 (앱 버전 1.1부터) · <a href="#en">English</a> · <a href="support/index.html">고객지원</a></p>
 
-<p>
-본 개인정보처리방침은 Rei("개발자")가 개발·배포하는 모바일 게임
-<strong>Skybreaker(우주벽돌깨기)</strong>(이하 "본 앱")에 적용됩니다.
-개발자는 별도의 서버를 운영하지 않으며, 본 앱과 관련된 데이터는 아래와 같이
-Apple이 제공하는 시스템(Game Center, iCloud, StoreKit) 및 기기 내부 저장소를
-통해서만 처리됩니다.
-</p>
-
-<h2>1. 수집하는 정보와 처리 방식</h2>
-<table>
-  <tr>
-    <th>항목</th>
-    <td>게임 진행도(챕터·스테이지 클리어 기록, 별점, 최고 점수, 보유 포인트, 라켓·공 등급, 사운드 설정 등)</td>
-  </tr>
-  <tr>
-    <th>저장 위치</th>
-    <td>
-      기기 로컬 저장소(UserDefaults)에 기본 저장되며, 사용자가 iCloud에 로그인한 경우
-      Apple의 iCloud(NSUbiquitousKeyValueStore)를 통해 같은 Apple 계정을 쓰는 기기 간에
-      동기화됩니다. 이 데이터는 개발자의 서버로 전송되지 않으며, 개발자는 이 데이터에
-      접근할 수 없습니다.
-    </td>
-  </tr>
-  <tr>
-    <th>Game Center</th>
-    <td>
-      점수·업적·순위표 기능은 Apple Game Center를 통해 제공됩니다. 로그인, 표시 이름,
-      점수 제출 등은 Apple의 Game Center 정책에 따라 처리되며, 개발자는 사용자의
-      Apple ID나 실명 등 개인 식별 정보를 직접 수집·저장하지 않습니다.
-    </td>
-  </tr>
-  <tr>
-    <th>인앱 결제</th>
-    <td>
-      부활 토큰, 라켓/공 등급, 광고 제거 등의 인앱 구매는 Apple StoreKit을 통해
-      처리됩니다. 결제 수단(카드 정보 등)은 Apple이 직접 처리하며 개발자에게
-      전달되지 않습니다.
-    </td>
-  </tr>
-  <tr>
-    <th>광고</th>
-    <td>
-      본 앱은 향후 업데이트에서 배너·보상형 광고를 표시할 수 있으며, 이 경우
-      Google AdMob 등 제3자 광고 네트워크가 광고 식별자(IDFA) 등 기기 식별 정보를
-      광고 제공 목적으로 처리할 수 있습니다. iOS의 앱 추적 투명성(ATT) 정책에 따라
-      추적 권한을 요청하는 경우, 사용자는 이를 언제든 거부할 수 있습니다.
-    </td>
-  </tr>
-</table>
-
-<p>
-본 앱은 이름, 이메일 주소, 전화번호, 위치정보 등 사용자를 직접 식별할 수 있는
-정보를 별도로 수집하지 않습니다.
-</p>
-
-<h2>2. 정보의 이용 목적</h2>
+<div class="box">
+<b>한눈에 보기</b>
 <ul>
-  <li>게임 진행 상태 저장 및 여러 기기 간 동기화</li>
-  <li>순위표·업적 등 Game Center 소셜 기능 제공</li>
-  <li>인앱 구매 처리 및 구매 내역 복원</li>
-  <li>(적용 시) 광고 게재 및 광고 성과 측정</li>
+  <li>개발자는 회원가입이 없고 서버를 운영하지 않으며, 이름·이메일·전화번호 같은 개인정보를 받지 않습니다.</li>
+  <li>버전 1.1부터 <b>이용자가 직접 선택할 때만 보는 보상형 광고</b>(Google AdMob)가 있습니다. 광고를 보지 않아도 게임을 끝까지 즐길 수 있습니다.</li>
+  <li>광고는 <b>비개인화 광고</b>로 요청하며, 앱은 <b>추적 허용(ATT)을 요청하지 않아</b> 광고 식별자(IDFA)를 사용하지 않습니다.</li>
+  <li>광고를 보여주는 과정에서 Google이 기기·광고 관련 정보를 처리합니다(아래 2항).</li>
 </ul>
-
-<h2>3. 제3자 제공</h2>
-<p>
-개발자는 수집·처리되는 정보를 제3자에게 별도로 판매하거나 제공하지 않습니다.
-다만 위에서 안내한 대로 Apple(Game Center, iCloud, StoreKit) 및 향후 도입될 수
-있는 광고 네트워크(Google AdMob 등)가 각 서비스 제공을 위해 필요한 범위에서
-정보를 처리할 수 있습니다.
-</p>
-
-<h2>4. 아동의 개인정보</h2>
-<p>
-본 앱은 만 13세 미만 아동으로부터 개인정보를 고의로 수집하지 않습니다.
-</p>
-
-<h2>5. 데이터 삭제</h2>
-<p>
-기기 로컬에 저장된 진행도는 앱을 삭제하면 함께 삭제됩니다. iCloud에 동기화된
-데이터는 기기의 설정 &gt; Apple 계정 &gt; iCloud에서 앱별 iCloud 사용을 껐을 때
-삭제할 수 있습니다.
-</p>
-
-<h2>6. 개인정보처리방침의 변경</h2>
-<p>
-본 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 변경 시 이 페이지를
-통해 고지합니다.
-</p>
-
-<h2>7. 문의</h2>
-<div class="contact">
-  개인정보 관련 문의사항은 아래 이메일로 연락해 주세요.<br>
-  <strong>이메일:</strong> <a href="mailto:sjwon.biz@gmail.com">sjwon.biz@gmail.com</a>
 </div>
 
-<footer>
-  Skybreaker(우주벽돌깨기) &middot; Privacy Policy &middot; Last updated 2026-09-19
-</footer>
+<h2>1. 개발자가 수집하는 정보</h2>
+<p>개발자(원석준)는 이용자의 개인정보를 직접 수집·저장하지 않습니다.</p>
+<ul>
+  <li>회원가입·로그인이 없습니다.</li>
+  <li>위치, 연락처, 사진, 카메라, 마이크에 접근하지 않습니다.</li>
+  <li>개발자가 운영하는 서버가 없습니다. 게임 데이터는 이용자의 기기와 Apple 서비스(iCloud)에만 저장됩니다.</li>
+</ul>
 
+<h2>2. 광고 (Google AdMob)</h2>
+<p>게임오버 화면에서 이용자가 <b>"광고 보고 부활 (목숨 +1)"</b>을 직접 누른 경우에만 보상형 광고가 재생됩니다. 전면 광고와 배너 광고는 없습니다.</p>
+<p>광고는 Google LLC의 Google Mobile Ads SDK가 제공합니다. 앱은 광고를 <b>비개인화</b>로 요청하고 추적 허용(ATT)을 요청하지 않으므로, iOS는 광고 식별자(IDFA)를 앱과 SDK에 제공하지 않습니다. 그럼에도 광고 제공·측정·부정 사용 방지·SDK 오류 진단을 위해 Google이 아래 정보를 처리할 수 있습니다.</p>
+<div class="wrap"><table>
+  <tr><th>항목</th><th>예시</th><th>목적</th></tr>
+  <tr><td>대략적 위치</td><td>IP 주소로 추정한 국가·지역</td><td>지역에 맞는 광고, 부정 방지</td></tr>
+  <tr><td>기기 식별자</td><td>앱·개발자 범위 식별자(광고 식별자 제외)</td><td>광고 제공, 노출 횟수 제한, 측정</td></tr>
+  <tr><td>광고 데이터</td><td>본 광고, 시청 완료 여부</td><td>광고 성과 측정</td></tr>
+  <tr><td>제품 상호작용</td><td>광고 탭, 동영상 재생</td><td>광고 성과 개선</td></tr>
+  <tr><td>진단 정보</td><td>충돌 기록, 성능(로드 시간 등), 기기 모델·OS 버전·언어</td><td>SDK 오류 진단, 광고 표시</td></tr>
+</table></div>
+<p>개발자는 이 정보를 개별 이용자를 알아볼 수 있는 형태로 받지 않으며, AdMob이 제공하는 <b>집계 보고서</b>(노출 수·수익 등)만 확인합니다.</p>
+<p>Google의 정보 처리에 관한 자세한 내용: <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google 파트너 사이트·앱의 데이터 사용 방식</a>, <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></p>
+
+<h2>3. Apple 서비스 이용</h2>
+<div class="wrap"><table>
+  <tr><th>서비스</th><th>용도</th><th>개발자의 접근</th></tr>
+  <tr><td>Game Center</td><td>순위표·업적</td><td>불가. 닉네임·점수는 Apple이 처리합니다</td></tr>
+  <tr><td>iCloud (Key-Value Storage)</td><td>게임 진행도 동기화</td><td>불가. 이용자의 iCloud 계정에 저장됩니다</td></tr>
+</table></div>
+<p>각 서비스는 <a href="https://www.apple.com/kr/legal/privacy/">Apple 개인정보 처리방침</a>을 따릅니다.</p>
+
+<h2>4. 기기에 저장되는 정보</h2>
+<p>스테이지 해금, 최고 점수, 보유 장비, 포인트, 부활 토큰, 사운드 설정은 이용자의 기기에 저장되며, iCloud를 켠 경우 이용자의 iCloud 계정으로 동기화됩니다.</p>
+
+<h2>5. 제3자 제공 및 국외 이전</h2>
+<p>개발자는 개인정보를 제3자에게 제공하지 않습니다. 다만 광고를 표시할 때 2항의 정보가 기기에서 Google로 직접 전송됩니다.</p>
+<div class="wrap"><table>
+  <tr><th>이전받는 자</th><td>Google LLC (연락처: <a href="https://support.google.com/policies/contact/general_privacy_form">Google 개인정보 문의</a>)</td></tr>
+  <tr><th>이전 국가</th><td>미국 등 Google이 운영하는 국가</td></tr>
+  <tr><th>이전 항목</th><td>2항의 표에 적힌 정보</td></tr>
+  <tr><th>이전 시점·방법</th><td>광고를 요청·재생할 때 네트워크로 전송</td></tr>
+  <tr><th>목적</th><td>광고 제공·측정, 부정 사용 방지, 오류 진단</td></tr>
+  <tr><th>보유 기간</th><td>Google 개인정보처리방침에 따름</td></tr>
+</table></div>
+<p>광고를 원하지 않으면 "광고 보고 부활" 버튼을 누르지 않으면 됩니다. 이 경우 광고 관련 정보는 전송되지 않습니다(광고를 미리 불러오는 과정의 요청은 제외).</p>
+
+<h2>6. 이용자의 선택</h2>
+<ul>
+  <li>광고 시청은 선택 사항입니다. 보지 않아도 모든 스테이지를 플레이할 수 있습니다.</li>
+  <li>iPhone의 <b>설정 → 개인정보 보호 및 보안 → 추적</b>에서 앱의 추적 요청을 막을 수 있습니다(이 앱은 추적을 요청하지 않습니다).</li>
+  <li>Google의 광고 설정: <a href="https://adssettings.google.com">adssettings.google.com</a></li>
+</ul>
+
+<h2>7. 아동의 개인정보</h2>
+<p>이 앱은 아동 전용 앱이 아니며 모든 연령이 이용할 수 있습니다. 개발자는 어떤 연령의 이용자로부터도 개인정보를 수집하지 않으며, 광고는 비개인화로만 요청합니다.</p>
+
+<h2>8. 데이터 삭제</h2>
+<p>앱을 삭제하면 기기에 저장된 게임 데이터가 삭제됩니다. iCloud에 동기화된 데이터는 기기의 iCloud 설정에서 이 앱의 데이터를 지워 삭제할 수 있습니다. Google이 처리한 광고 관련 정보는 Google의 정책에 따라 관리됩니다.</p>
+
+<h2>9. 처리방침의 변경</h2>
+<p>내용이 바뀌면 이 페이지에 게시하고 시행일을 갱신합니다.</p>
+<ul>
+  <li>2026년 10월 14일: 보상형 광고(Google AdMob) 도입에 맞춰 2·5·6항 개정, 앱 내 구매 항목 삭제</li>
+  <li>2026년 9월 19일: 최초 시행</li>
+</ul>
+
+<h2>10. 개인정보 보호책임자 및 문의</h2>
+<p>개인정보 보호책임자: 원석준(Rei Won)<br>이메일: <a href="mailto:sjwon.biz@gmail.com">sjwon.biz@gmail.com</a></p>
+
+<hr>
+
+<h1 id="en">Skybreaker Privacy Policy</h1>
+<p class="meta">Effective: October 14, 2026 (app version 1.1 and later) · <a href="support/index.html">Support</a></p>
+
+<div class="box">
+<b>Summary</b>
+<ul>
+  <li>There is no account, and the developer runs no servers and does not receive personal information such as your name, email or phone number.</li>
+  <li>Starting with version 1.1, the app shows <b>rewarded ads (Google AdMob) only when you choose to watch one</b>. The whole game can be played without watching ads.</li>
+  <li>Ads are requested as <b>non-personalized</b>, and the app <b>does not ask for tracking permission (ATT)</b>, so the advertising identifier (IDFA) is not used.</li>
+  <li>To show ads, Google processes certain device and ad-related information (Section 2).</li>
+</ul>
+</div>
+
+<h2>1. Information the Developer Collects</h2>
+<p>The developer (Rei Won) does not collect or store your personal information.</p>
+<ul>
+  <li>No account registration or login.</li>
+  <li>No access to your location, contacts, photos, camera or microphone.</li>
+  <li>No developer-run servers. Game data stays on your device and in Apple services (iCloud).</li>
+</ul>
+
+<h2>2. Advertising (Google AdMob)</h2>
+<p>A rewarded ad plays only when you tap <b>"Watch ad to revive (+1 life)"</b> on the Game Over screen. There are no interstitial or banner ads.</p>
+<p>Ads are provided by the Google Mobile Ads SDK from Google LLC. The app requests <b>non-personalized</b> ads and does not request tracking permission (ATT), so iOS does not provide the advertising identifier (IDFA) to the app or the SDK. To deliver and measure ads, prevent fraud and diagnose SDK errors, Google may still process:</p>
+<div class="wrap"><table>
+  <tr><th>Data</th><th>Examples</th><th>Purpose</th></tr>
+  <tr><td>Coarse location</td><td>Country/region estimated from IP address</td><td>Regional ads, fraud prevention</td></tr>
+  <tr><td>Device identifiers</td><td>App- or developer-scoped identifiers (not the advertising identifier)</td><td>Ad delivery, frequency capping, measurement</td></tr>
+  <tr><td>Advertising data</td><td>Ads shown, whether a video was completed</td><td>Ad measurement</td></tr>
+  <tr><td>Product interaction</td><td>Ad taps, video plays</td><td>Improving ad performance</td></tr>
+  <tr><td>Diagnostics</td><td>Crash logs, performance (e.g. load time), device model, OS version, language</td><td>SDK diagnostics, ad display</td></tr>
+</table></div>
+<p>The developer does not receive this information in a form that identifies individual users and only sees <b>aggregated AdMob reports</b> (impressions, earnings, etc.).</p>
+<p>More information: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+
+<h2>3. Apple Services</h2>
+<div class="wrap"><table>
+  <tr><th>Service</th><th>Purpose</th><th>Developer access</th></tr>
+  <tr><td>Game Center</td><td>Leaderboards and achievements</td><td>None. Nicknames and scores are handled by Apple</td></tr>
+  <tr><td>iCloud (Key-Value Storage)</td><td>Syncing game progress</td><td>None. Stored in your iCloud account</td></tr>
+</table></div>
+<p>These services are governed by the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+
+<h2>4. Data Stored on Your Device</h2>
+<p>Stage unlocks, high scores, equipment, points, revive tokens and sound settings are stored on your device and, if iCloud is on, synced to your iCloud account.</p>
+
+<h2>5. Sharing and International Transfer</h2>
+<p>The developer does not share personal information with third parties. When an ad is shown, the information in Section 2 is sent directly from your device to Google LLC, which may process it in the United States and other countries where Google operates, for the purposes above and for the period set out in Google's Privacy Policy. If you do not want ads, simply don't tap the ad button (requests made while preloading an ad excepted).</p>
+
+<h2>6. Your Choices</h2>
+<ul>
+  <li>Watching ads is optional; every stage can be played without them.</li>
+  <li>You can block tracking requests in <b>Settings → Privacy &amp; Security → Tracking</b> (this app does not request tracking).</li>
+  <li>Google ad settings: <a href="https://adssettings.google.com">adssettings.google.com</a></li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+<p>The app is not directed only at children and is suitable for all ages. The developer collects no personal information from users of any age, and ads are requested as non-personalized only.</p>
+
+<h2>8. Deleting Data</h2>
+<p>Deleting the app removes game data stored on your device. Data synced to iCloud can be removed in your device's iCloud settings. Ad-related information processed by Google is handled under Google's policies.</p>
+
+<h2>9. Changes</h2>
+<ul>
+  <li>October 14, 2026: Sections 2, 5 and 6 revised for rewarded ads (Google AdMob); in-app purchase section removed</li>
+  <li>September 19, 2026: First version</li>
+</ul>
+
+<h2>10. Contact</h2>
+<p>Privacy officer: Rei Won · Email: <a href="mailto:sjwon.biz@gmail.com">sjwon.biz@gmail.com</a></p>
+
+</main>
 </body>
 </html>
